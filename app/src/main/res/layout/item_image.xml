@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/mv" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_color">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="450dp"
+            android:text="Doctor Strange: Kẻ cắp thời gian"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07 DEC 2022"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:src="@drawable/ic_baseline_star_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <TextView
+                android:id="@+id/textRate"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8.6/10"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/mv"
+        app:layout_constraintTop_toTopOf="@+id/gradientColor"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/gradientColor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_color_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="564dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewDetail"
+                android:layout_gravity="bottom"
+                android:layout_width="177dp"
+                android:layout_height="300dp"
+                android:src="@drawable/mv"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"
+                    android:text="Harry Potter"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/subText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Thể loại: Phiêu lưu, mạo hiểm"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        android:rating="5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp">
+                    </RatingBar>
+                    <TextView
+                        android:id="@+id/textRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="8.6/10"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:text="Overview"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/overViewText"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Android Studio organizes code into projects, which contain everything that defines your Android app, from app source code to build configurations and test code. Projects open in separate Android Studio windows. Each project contains one or more modules, which let you divide your project into discrete units of functionality. Modules can be independently built, tested, and debugged."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
